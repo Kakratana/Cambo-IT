@@ -27,6 +27,38 @@
                 <option value=ច័ន្ទ-សុក្រ>ច័ន្ទ-សុក្រ</option>
                 <option value=សៅរ៍-អាទិត្យ>សៅរ៍-អាទិត្យ</option>
             </select>
+
+            <select style="width: 35%;float: left; margin-right: 1%;" id="inTime" placeholder="ម៉ោង​សិក្សា" required>
+                <option value="ម៉ោង​សិក្សា" selected disabled hidden>ម៉ោង​សិក្សា</option>
+                <option value="៦-៧ ព្រឹក">៦-៧ ព្រឹក</option>
+                <option value="៧-៨ ព្រឹក">៧-៨ ព្រឹក</option>
+                <option value="៨-៩ ព្រឹក">៨-៩ ព្រឹក</option>
+                <option value="៩-១០ ព្រឹក">៩-១០ ព្រឹក</option>
+                <option value="១០-១១ ព្រឹក">១០-១១ ព្រឹក</option>
+                <option value="១១-១២ ព្រឹក">១១-១២ ព្រឹក</option>
+
+                <option value="១២-១ ល្ងាច">១២-១ ល្ងាច</option>
+                <option value="១-២ ល្ងាច">១-២ ល្ងាច</option>
+                <option value="២-៣ ល្ងាច">២-៣ ល្ងាច</option>
+                <option value="៣-៤ ល្ងាច">៣-៤ ល្ងាច</option>
+                <option value="៤-៥ ល្ងាច">៤-៥ ល្ងាច</option>
+                <option value="៥-៦ ល្ងាច">៥-៦ ល្ងាច</option>
+                <option value="៦-៧ ល្ងាច">៦-៧ ល្ងាច</option>
+            </select>
+
+            <select style="width: 59%;float: left; margin-right: 1%;" id="inCourse" placeholder="វគ្គ​សិក្សា" required>
+                <option value="​វគ្គ​សិក្សា" selected disabled hidden>វគ្គ​សិក្សា</option>
+                <option value="កុំព្យូទ័ររដ្ឋបាល">កុំព្យូទ័ររដ្ឋបាល</option>
+                <option value="កាត់តរូបភាព">កាត់តរូបភាព</option>
+                <option value="កាត់តវីឌីអូ">កាត់តវីឌីអូ</option>
+                <option value="រចនា​ក្រាហ្វិច">រចនា​ក្រាហ្វិច</option>
+                <option value="ជួសជុល​កុំព្យូទ័រ">ជួសជុល​កុំព្យូទ័រ</option>
+                <option value="គូស​ប្លង់">គូស​ប្លង់</option>
+                <option value="គ្រប់គ្រងទិន្នន័យ">គ្រប់គ្រងទិន្នន័យ</option>
+                <option value="កម្មវិធី3D">កម្មវិធី3D</option>
+                <option value="បង្កើតគំនូរជីវចល">បង្កើតគំនូរជីវចល</option>
+            </select>
+
             <!-- <input style="width: 59%; " lang="km" type="text" id="inPosition" placeholder="​វេនសិក្សា" required>-->
             <!-- <select style="width: 40%;float: left; margin-right: 1%;" id="inBranch"  placeholder="សាខា" required>
       <option value= 2>សាខា</option>
@@ -139,7 +171,7 @@
 
             <!-- <label style="width: 100%; float: left;  font-size: 12pt; color: #757575;">ចូលធ្វើការវិញថ្ងៃទី</label> -->
             <select style="width: 45%; float: left; margin-right: 1%;" id="inDateI" placeholder="ចាប់ពីថ្ងៃទី..." required>
-                <option value="ថ្ងៃទី" selected disabled hidden>ចូលធ្វើការវិញថ្ងៃទី</option>
+                <option value="ថ្ងៃទី" selected disabled hidden>ចូលរៀនវិញថ្ងៃទី</option>
                 <option value="០១">០១</option>
                 <option value="០២">០២</option>
                 <option value="០៣">០៣</option>
@@ -199,20 +231,22 @@
                 <li id="name"></li>
                 <li id="sex"></li>
                 <li id="position"></li>
+                <li id="time"></li>
+                <li id="course"></li>
                 <li id="days"></li>
                 <li id="datef"></li>
                 <li id="datet"></li>
                 <li id="datei"></li>
                 <li id="reason"></li>
             </ul>
-            <img src="absence/Sremeas-Logo.png" id="logo">
+            <img src="absence/Cambo-IT Logo.svg" id="logo">
         </div>
     </div>
     
 
 
     <div class="container" id="show">
-        <canvas id="result" width="720" height="760"></canvas>
+        <canvas id="result" width="720" height="860"></canvas>
         <button style="margin-right: auto; margin-left: auto;" id="down"> Download <i class="fa fa-download" aria-hidden="true"></i></button>&nbsp;
         <button style="font-size: 18px; margin-right: auto; margin-left: auto;" onClick="onShares()">Share Image <i class="fa fa-share" aria-hidden="true"></i></button>
     </div>
